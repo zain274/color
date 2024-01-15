@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Change</title>
+
+
+<script>
+    function myfunction()
+    {
+var mobilenamesselectvar= document.getElementById("mobilenamesselect").value;
+if(mobilenamesselectvar=="Motorola")
+{
+    document.getElementById("imgid").src="images/motorola.jpg";
+}
+else if(mobilenamesselectvar=="Techno")
+{
+    document.getElementById("imgid").src="images/tecno.jpg";
+}
+
+else if(mobilenamesselectvar=="Samsung")
+{
+    document.getElementById("imgid").src="images/samsung.jpg";
+
+}
+    }
+
+</script>
+
+</head>
+
+<body>
+
+    <select id="mobilenamesselect">
+        <option value="Motorola">Motorola</option>
+        <option value="Techno">Techno</option>
+        <option value="Samsung">Samsung</option>
+
+    </select>
+    <br>
+ 
+    <button onclick="myfunction()">Submit</button>
+
+    <img src="images/img1.png" id="imgid" width="200" height="200"/>
+</body>
+</html>

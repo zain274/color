@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextProperty</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+<script>
+function myfunction()
+{
+    var textvar=document.getElementById("textid").value;
+    var textcolorvar=document.getElementById("textcolorid").value;
+    var fontsizevar=document.getElementById("fontsizeid").value;
+    var fontfamilyvar=document.getElementById("fontfamilyid").value;
+    var texttransformvar=document.getElementById("texttransformid").value;
+
+
+    document.getElementById("demo").innerHTML=textvar;
+    document.getElementById("demo").style.color=textcolorvar;
+    document.getElementById("demo").style.fontSize=fontsizevar;
+    document.getElementById("demo").style.fontFamily=fontfamilyvar;
+    document.getElementById("demo").style.textTransform=texttransformvar;
+
+}
+
+</script>
+
+</head>
+<body>
+    <div class="container-fluid">
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+
+        <h1>Text Property</h1>
+<input type="text" placeholder="Enter Name" id="textid" class="form-control">
+<input type="text" placeholder="Enter Text Color" id="textcolorid" class="form-control">
+<input type="text" placeholder="Enter Font Size" id="fontsizeid" class="form-control">
+<input type="text" placeholder="Enter FontFamily" id="fontfamilyid" class="form-control">
+<input type="text" placeholder="Enter Text Transform" id="texttransformid" class="form-control">
+<p id="demo"></p>
+<button onclick="myfunction()" class="form-control btn btn-danger">Submit</button>
+
+    </div>
+</div>
+
+    </div>
+</body>
+</html>
